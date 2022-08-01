@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link  href="styles/nos-produits.css" rel="stylesheet">
+    <title> my market </title>
+</head>
+<body>
+    <header>
+<!--navbar-->
+<nav class="navbar sticky-top navbar-expand-md navbar-light" id="navnavbar">
+  <article class="container-fluid" >
+    <section><a href="./home.html" class="navbar-brand"><img src="images-market/logos/logotr-60px.png" alt="home"></a>  
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    </section>  
+    <section class="collapse navbar-collapse"  id="navbarCollapse">
+      <ul class="navbar-nav align-items-center justify-content-around " id="navbar">
+        <li class="ni nav-item nav-link" ><a href="./nos-produits.html" id="ni" class="text-decoration-none text-nowrap">NOS PRODUITS</a></li>
+        <li class="ni nav-item nav-link" ><a href="./qui-nous-sommes.html" id="ni1"  class="text-decoration-none text-nowrap">QUI NOUS SOMMES</a></li>
+        <li class="ni nav-item nav-link" ><a href="./nos-packs.html" id="ni2" class="text-decoration-none text-nowrap ">NOS PACKS</a></li>
+        <li class="ni nav-item nav-link" ><a href="./blog.html" id="ni3" class="text-decoration-none text-nowrap">BLOG</a></li>
+        <li class="ni nav-item nav-link" ><a href="./contact.html" id="ni4" class="text-decoration-none text-nowrap">CONTACT</a></li>
+        <li class="ni nav-item nav-link" ><a href="./espace-client.html" id="ni5" class="text-decoration-none text-nowrap">ESPACE CLIENTS</a></li>
+        <li class="ni nav-item nav-link" ><a href=" " id="ni6"><img src="images-market/logos/buy.png" alt="buy"></a></li>                        
+        </ul>                 
+    </section>
+  </article>
+</nav>       
+<!--fin de navbar-->      
+    </header>
+    <main>  
+<!--debut de carousel pub-->
+        <article id="carouselpub" class="carousel slide" data-bs-ride="carousel">
+          <section class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images-market/bandeaux/bandeau-livraison-express.png" class="d-block w-100" alt="bandeau-livraison-express...">
+            </div>
+            <div class="carousel-item">
+              <img src="images-market/bandeaux/bandeau-votre-epicerie-asiatique-enligne.png" class="d-block w-100" alt=".bandeau-votre-epicerie-asiatique-enligne..">
+            </div>
+            <div class="carousel-item">
+              <img src="images-market/bandeaux/bandeau-barbecue.png" class="d-block w-100" alt="bandeau-barbecue...">
+            </div>
+          </section>
+        </article>
+<!--fin de caroussel pub-->
+<!--block de produits-->      
+        <!--nav categorie de produit  -->
+        <nav class="navbar navbar-expand-lg navbar-light " id="navcategorie">
+          <article class="container-fluid" id="containercategorie">          
+            <section  id="navbarnav">
+              <ul  id="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " href="#produitsfrais">PRODUITS FRAIS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#epicerie">ÉPICERIE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#boissons">BOISSONS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#the">THÉ</a>
+                </li>
+              </ul>
+            </section>
+          </article>
+        </nav>
+        <!-- fin nav categorie de produit -->
+        <!-- déroulant tri -->
+        <select class="form-select" aria-label="Default select example" id="tri">
+          <option selected="">Trier par:</option>
+          <option value="1">Prix croissant</option>
+          <option value="2">Prix décroissant</option>
+          <option value="3">origine</option>
+        </select>
+        <!-- fin déroulant tri -->     
+        <article class="container   ">
+          <!-- titre categorie de produit -->
+          <h2 id="produitsfrais">PRODUITS FRAIS</h2>
+          <!-- ligne 1er et 2éme produit /colonne 1er et 2éme produit -->          
+          <section class="row flex-column flex-md-row mb-5 mt-2 w-100 gx-0" id="rowprod">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto w-50 ">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/produits-frais/boulettes-de-boeuf-500g.jpg" class="card-img-top mw-100" alt="boulettes-de-boeuf-500g">
+                <div class="card-body">
+                  <h5 class="card-title">Boulette de boeuf 500gr</h5>
+                  <p class="card-text">8.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50 " >
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/produits-frais/saucisses-chinoises-aux-epices-500g.jpg" class="card-img-top mw-100" alt="saucisses-chinoises-aux-epices-500g">
+                <div class="card-body">
+                  <h5 class="card-title">saucisses chinoises 500g</h5>
+                  <p class="card-text">8.40€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!-- fin ligne 1er et 2éme produit /colonne 1er et 2éme produit -->
+          <!-- suite produit -->
+          <section class="row flex-column flex-md-row mb-5 mt-2 w-100   gx-0 ">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/produits-frais/brioches-vapeur-a-la-viande-560g-par-4.jpg" class="card-img-top mw-100" alt="brioches-vapeur-a-la-viande-560g-par-4">
+                <div class="card-body">
+                  <h5 class="card-title">brioches vapeur 375gr</h5>
+                  <p class="card-text">5.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/produits-frais/citronnelle-fraiche-100g.jpg" class="card-img-top mw-100" alt="citronnelle-fraiche-100g..">
+                <div class="card-body">
+                  <h5 class="card-title">citronnelle fraiche 100g</h5>
+                  <p class="card-text">5.45€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!-- fin de suite produit -->
+          <!-- suite produit -->
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/produits-frais/citrons-combavas-par-32.jpg" class="card-img-top mw-100" alt="citrons-combavas-par-32...">
+                <div class="card-body">
+                  <h5 class="card-title">citrons-combavas-par-32</h5>
+                  <p class="card-text">11.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/produits-frais/gingembre frais 300g.jpg" class="card-img-top mw-100" alt="gingembre frais...">
+                <div class="card-body">
+                  <h5 class="card-title">gingembre frais 300gr</h5>
+                  <p class="card-text">5.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!-- fin de suite produit -->
+          <!-- suite produit -->
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/produits-frais/infusion-gingembre.jpg" class="card-img-top mw-100" alt="infusion-gingembre...">
+                <div class="card-body">
+                  <h5 class="card-title">infusion gingembre</h5>
+                  <p class="card-text">7.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/produits-frais/infusions-gingembre-sachets.jpg" class="card-img-top mw-100" alt="infusions-gingembre-sachets...">
+                <div class="card-body">
+                  <h5 class="card-title">infusions-gingembre-sachets</h5>
+                  <p class="card-text">5.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!-- fin de suite produit -->
+          <!-- suite produit -->
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/produits-frais/oeufs-de-100-ans-boite-de-6.jpg" class="card-img-top mw-100" alt="oeufs-de-100-ans-boite-de-6...">
+                <div class="card-body">
+                  <h5 class="card-title">oeufs de 100ans les 6</h5>
+                  <p class="card-text">11.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/produits-frais/piments-thais-prik-kee-noo-100g2.jpg" class="card-img-top mw-100" alt=".piments-thais-prik-kee-noo-100g2..">
+                <div class="card-body">
+                  <h5 class="card-title">piments thais 100g2</h5>
+                  <p class="card-text">8.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!-- fin de suite produit -->
+          <!--nav categorie de produit  -->
+        <nav class="navbar navbar-expand-lg navbar-light " id="navcategorie">
+          <article class="container-fluid" id="containercategorie">          
+            <section  id="navbarnav">
+              <ul  id="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " href="#produitsfrais">PRODUITS FRAIS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#epicerie">ÉPICERIE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#boissons">BOISSONS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#the">THÉ</a>
+                </li>
+              </ul>
+            </section>
+          </article>
+        </nav>
+          <!-- fin nav categorie de produit -->
+          <!-- titre categorie de produit -->
+          <h2 id="epicerie">ÉPICERIE</h2>
+          <!-- suite produit -->
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/epicerie/boeuf-jerky-vegan-70g-plumpy-s2.jpg" class="card-img-top mw-100" alt="boeuf-jerky-vegan-70g-plumpy-s2...">
+                <div class="card-body">
+                  <h5 class="card-title">boeuf jerky vegan 70g</h5>
+                  <p class="card-text">7.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/epicerie/fortune-cookies-par-10-50g.jpg" class="card-img-top mw-100" alt="fortune-cookies-par-10-50g...">
+                <div class="card-body">
+                  <h5 class="card-title">fortune cookies 50g</h5>
+                  <p class="card-text">9.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/epicerie/nougat-chinois-au-sesame-136g.jpg" class="card-img-top mw-100" alt="nougat-chinois-au-sesame-136g">
+                <div class="card-body">
+                  <h5 class="card-title">nougat dur sesame 136g</h5>
+                  <p class="card-text">8.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/epicerie/nouilles-chinoises-fines-aux-oeufs-454g.jpg" class="card-img-top mw-100" alt="nouilles-chinoises-fines-aux-oeufs-454g">
+                <div class="card-body">
+                  <h5 class="card-title">nouilles chinoises fines 454g</h5>
+                  <p class="card-text">8.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/epicerie/nouilles-de-canton-300g.jpg" class="card-img-top mw-100" alt="nouilles-de-canton-300g">
+                <div class="card-body">
+                  <h5 class="card-title">nouilles de canton 300g</h5>
+                  <p class="card-text">6.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/epicerie/oignons-frits-150g.jpg" class="card-img-top mw-100" alt="oignons-frits-150g">
+                <div class="card-body">
+                  <h5 class="card-title">oignons frits 150g</h5>
+                  <p class="card-text">8.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/epicerie/poivre-de-sichuan-de-timut-100g.jpg" class="card-img-top mw-100" alt="poivre-de-sichuan-de-timut-100g">
+                <div class="card-body">
+                  <h5 class="card-title">poivre sichuan timut 100g</h5>
+                  <p class="card-text">11.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/epicerie/vermicelles-de-soja-100g-lungkow.jpg" class="card-img-top mw-100" alt="vermicelles-de-soja-100g-lungkow">
+                <div class="card-body">
+                  <h5 class="card-title">vermicelles soja 100g</h5>
+                  <p class="card-text">8.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!-- fin de suite produit -->
+          <!--nav categorie de produit  -->
+        <nav class="navbar navbar-expand-lg navbar-light " id="navcategorie">
+          <article class="container-fluid" id="containercategorie">          
+            <section  id="navbarnav">
+              <ul  id="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " href="#produitsfrais">PRODUITS FRAIS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#epicerie">ÉPICERIE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#boissons">BOISSONS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#the">THÉ</a>
+                </li>
+              </ul>
+            </section>
+          </article>
+        </nav>
+          <!-- fin nav categorie de produit -->
+          <!-- titre categorie de produit -->
+          <h2 id="boissons">BOISSONS</h2>
+          <!-- suite produit -->
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!-- 1er produit -->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/boissons/biere-chinoise-tsingtao-33cl-bouteille-4-7.jpg" class="card-img-top mw-100" alt="biere-chinoise-tsingtao-33cl-bouteille-4-7">
+                <div class="card-body">
+                  <h5 class="card-title">biere chinoise tsingtao 33cl</h5>
+                  <p class="card-text">2.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/boissons/biere-japonaise-kirin-ichiban-33cl-bouteille-5.jpg" class="card-img-top mw-100" alt="biere-japonaise-kirin-ichiban-33cl-bouteille-5">
+                <div class="card-body">
+                  <h5 class="card-title">biere japonaise kirin 33cl</h5>
+                  <p class="card-text">2.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/boissons/draft-sake-hakutsuru-300ml-14.jpg" class="card-img-top mw-100" alt="draft-sake-hakutsuru-300ml-14">
+                <div class="card-body">
+                  <h5 class="card-title">sake hakutsuru 300ml</h5>
+                  <p class="card-text">25.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/boissons/jus-de-goyave-rose-33cl-foco.jpg" class="card-img-top mw-100" alt="jus-de-goyave-rose-33cl-foco">
+                <div class="card-body">
+                  <h5 class="card-title">jus de goyave rose 33cl</h5>
+                  <p class="card-text">2.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/boissons/jus-de-mangue-33cl-chinchin.jpg" class="card-img-top mw-100" alt="jus-de-mangue-33cl-chinchin">
+                <div class="card-body">
+                  <h5 class="card-title">jus de mangue 33cl</h5>
+                  <p class="card-text">2.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/boissons/mei-kuei-lu-alcool-de-rose-50cl-golden-star-54.jpg" class="card-img-top mw-100" alt="mei-kuei-lu-alcool-de-rose-50cl-golden-star-54">
+                <div class="card-body">
+                  <h5 class="card-title">mei kuei rose 50cl</h5>
+                  <p class="card-text">15.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/boissons/soda-au-lychee-33cl-coq.jpg" class="card-img-top mw-100" alt="soda-au-lychee-33cl-coq">
+                <div class="card-body">
+                  <h5 class="card-title">soda au lychee 33cl</h5>
+                  <p class="card-text">2.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/boissons/biere-thailandaise-singha-33cl-bouteille-5.jpg" class="card-img-top mw-100" alt="biere-thailandaise-singha-33cl-bouteille-5">
+                <div class="card-body">
+                  <h5 class="card-title">biere thai singha-33cl</h5>
+                  <p class="card-text">2.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!--nav categorie de produit  -->
+          <nav class="navbar navbar-expand-lg navbar-light " id="navcategorie">
+            <article class="container-fluid" id="containercategorie">          
+              <section  id="navbarnav">
+                <ul  id="navbar-nav">
+                 <li class="nav-item">
+                   <a class="nav-link " href="#produitsfrais">PRODUITS FRAIS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#epicerie">ÉPICERIE</a>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link" href="#boissons">BOISSONS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#the">THÉ</a>
+                  </li>
+                </ul>
+             </section>
+            </article>
+          </nav>
+  <!-- fin nav categorie de produit -->
+          <!-- titre categorie de produit -->
+          <h2 id="the">THÉ</h2>
+          <!-- suite produit -->
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/thés/billes-de-tapioca-bubble-tea-the-vert.jpg" class="card-img-top mw-100" alt="billes-de-tapioca-bubble-tea-the-vert">
+                <div class="card-body">
+                  <h5 class="card-title">billes de tapioca 100g</h5>
+                  <p class="card-text">11.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/thés/the-au-chrysantheme-33cl-foco.jpg" class="card-img-top mw-100" alt="the-au-chrysantheme-33cl-foco">
+                <div class="card-body">
+                  <h5 class="card-title">thé au chrysantheme 33cl</h5>
+                  <p class="card-text">8.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/thés/the-noir-au-citron-53cl-chinchin.jpg" class="card-img-top mw-100" alt="the-noir-au-citron-53cl-chinchin">
+                <div class="card-body">
+                  <h5 class="card-title">thé noir citron 53cl</h5>
+                  <p class="card-text">10.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/thés/the-oolong-20-sachets.jpg" class="card-img-top mw-100" alt="the-oolong-20-sachets">
+                <div class="card-body">
+                  <h5 class="card-title">thé oolong 20 sachets</h5>
+                  <p class="card-text">13.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!-- fin de suite produit -->                  
+          <!-- suite produit -->
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/thés/the-vert-au-jasmin-20-sachets.jpg" class="card-img-top mw-100" alt="the-vert-au-jasmin-20-sachets">
+                <div class="card-body">
+                  <h5 class="card-title">thé vert jasmin 20 sachets</h5>
+                  <p class="card-text">11.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/thés/the-vert-au-miel-53cl-chinchin.jpg" class="card-img-top mw-100" alt="the-vert-au-miel-53cl-chinchin">
+                <div class="card-body">
+                  <h5 class="card-title">thé vert miel 53cl</h5>
+                  <p class="card-text">8.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <section class="row justify-content-around flex-column flex-md-row mb-5 mt-2 w-100   gx-0">
+            <!--1er produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1  m-auto justify-content-between" id="blockcard">
+                <img src="images-market/thés/the-vert-gunpowder-125g.jpg" class="card-img-top mw-100" alt="the-vert-gunpowder-125g">
+                <div class="card-body">
+                  <h5 class="card-title">thé vert gunpowder 125g</h5>
+                  <p class="card-text">10.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>
+            </div>  
+            <!-- fin 1er produit -->
+            <!--2éme produit-->
+            <div class="col-12 col-md-4 pt-4 text-center m-auto  w-50">
+              <div class="card p-1 m-auto" id="blockcard">
+                <img src="images-market/thés/The-vert-japonais-50cl-Oishi.jpg" class="card-img-top mw-100" alt="the The-vert-japonais-50cl-Oishi">
+                <div class="card-body">
+                  <h5 class="card-title">thé vert japonais 50cl</h5>
+                  <p class="card-text">13.90€</p>
+                  <a href="#" class="btn btn-primary" id="boutonpanier">ajouter au panier</a>
+                </div>
+              </div>           
+            </div>
+            <!-- fin 2éme produit -->
+          </section>
+          <!-- fin de suite produit -->          
+        </article>
+        <!--fin block produits-->
+    </main> 
+    <!--debut footer-->  
+    <article class="container " id="containerfooter">
+      <footer  id="footer">
+        <section class="container">
+          <div class="row w-100">
+            <div class="col-lg-3 col-6 pt-4 pb-4">
+              <h5 class="mb-3 " id="t4">MAISON</h5>
+              <ul class="list-unstyled mb-0" id="f9">
+                <li>
+                  <a href="./home.html"><img src="images-market/logos/logotr-150px.png"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 pt-4 pb-4 ">
+              <h5 class="mb-3"id="t1">NOS SPÉCIALITÉS</h5>
+              <ul class="list-unstyled mb-0">
+                <li >
+                  <a href="#!" id="f1"><p>LOCALES</p></a>
+                </li>
+                <li >
+                  <a href="#!" id="f2"><p>NATIONALES</p></a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!"class="mb-1" id="f3"><p>LE MONDE</p></a>
+                </li>           
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6  pt-4 pb-4 ">
+              <h5 class="mb-3" id="t2">AIDE</h5>
+                <ul class="list-unstyled mb-1">
+                  <li>
+                    <a href="#!"class="mb-1" id="f4"><p>FAQ</p></a>
+                  </li>
+                  <li >
+                    <a href="#!" class="mb-1"id="f5"><p>MENTIONS LEGALES</p></a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6  pt-4 pb-4 ">
+              <h5 class="mb-3" id="t3">CONTACT</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-1"id="f6">
+                    <p>395 Av de la libération<br>83160 LA VALETTE DU VAR</p>
+                    </li>
+                  <li class="mb-1" id="f7">
+                    <p>info@llym.com</p>
+                  </li>
+                  <li class="mb-1" id="f8">
+                    <p>+09 52 58 16 85</p>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </section>
+        <section class="text-center p-3" id="copyright">
+            <p>© 2022 Copyright:</p>
+            <a class="text-dark" href="https://mdbootstrap.com/">TZUPER-TCHINOUAAAH.com</a>
+        </section>     
+    <!-- Copyright -->
+      </footer> 
+    </article>      
+    <!--fin de footer-->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+
+
+
+</div>
+
+
+

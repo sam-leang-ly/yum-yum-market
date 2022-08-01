@@ -1,0 +1,133 @@
+
+/* debut css navbar */
+#navnavbar{
+    background-color:#b69133;
+    
+}
+#navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+font-size: 1rem;
+}
+ul .ni{
+    text-align:center;}
+#ni, #ni1, #ni2, #ni3, #ni4, #ni5, #ni6 {
+    color: #46470f;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    text-decoration: none;  
+}
+a{
+    text-decoration: none;
+    color: #46470f;
+}
+@media (max-width: 1100px) {
+    #ni, #ni1, #ni2, #ni3, #ni4, #ni5, #ni6 {
+        font-size: 17px;
+}
+}
+.banierelogo{
+        width: 100%;
+        height:86px;}  
+/* fin css nav bar */
+/*debut formulaire enregistrement/connection  */
+   body{    
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+   }
+   .height{
+    height: 100vh;
+   }
+   .card{
+    border:none;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(200, 200, 200, 0.7)),url("../images-market/contact/istockphoto-545455948-612x612.jpg");
+    border-radius: 20px;
+    border-color: #2e3007;
+    border:2px solid;
+    background-size: cover;
+    background-position: center;
+    color: #46470f;
+    font: size 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    ;       
+   }
+   .form-input{
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   }
+   .form-input i{
+   position: absolute;
+   font-size: 18px;
+   top: 15px;
+   left: 10px;
+   }
+   .form-control{
+    height: 50px;
+    background-color: #b69133;
+    border-radius: 20px;
+    border-color: #2e3007;
+    border:2px solid;
+    text-indent: 24px;
+    font-size: 15px;
+    color: #2e3007;    
+   } 
+   .form-control:focus{
+    background-color: #b69133;
+    box-shadow: none;
+    color: #46470f;
+    border-color: #b69133;
+   }
+   .form-check-label{
+    margin-top: 2px;
+    font-size: 14px;
+   }
+    .signup{
+      height: 50px;
+      font-size: 14px;
+    }
+    #registerbutton{
+       color: #2e3007;
+       background-color: #b69133;
+       border-radius: 20px;
+       border-color: #2e3007;
+       border:2px solid;
+    }
+/*fin formulaire enregistrement/connection  */
+/* debut css footer */
+#footer{
+    background-color: #92701a;
+    width: 100vw;     
+}
+#containerfooter{
+    margin: 0;
+    width: 100vw;
+    padding: 0;    
+}
+
+#f1, #f2, #f3, #f4, #f5, #f6, #f7, #f8,#f9{
+    color: #2e3007;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none; 
+    font-size: 13px;  
+    text-align: center;
+    align-items: center;   
+}
+
+#t1, #t2, #t3, #t4{
+    color: #2e3007;
+    letter-spacing: 2px;
+    font-size: 17px;
+    text-align: center;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* fin de footer */
+
+
